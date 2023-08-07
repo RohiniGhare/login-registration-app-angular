@@ -1,0 +1,24 @@
+<div class="login-container">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h2 class="card-title">Login Here</h2>
+          
+          <form [(ngModel)]="userLogin" (ngSubmit)="onSubmit()">
+            <div class="forms-module">
+                <label for="email">Email</label>
+                <input type="email" id="email" [(ngModel)]="userLogin.email" name="email" required>
+            </div>
+            <div class="forms-module">
+                <label for="passwword">Password</label>
+                <input type="password" id="password" [(ngModel)]="userLogin.password" name="password" required>
+            </div>
+            <div class="forms-module">
+                <button class="btn btn-success" type="submit">Login</button>
+            </div>
+        </form>
+
+        <a href="registration" routerLink="registration">Register Here..</a>
+        </div>
+      </div>
+</div>
